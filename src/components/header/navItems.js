@@ -1,5 +1,5 @@
 const InteoNavItems = ({ children }) => {
-  return <ul className="flex items-center justify-between gap-12">{children}</ul>;
+  return <ul className="sm:hidden flex items-center justify-between gap-12">{children}</ul>;
 };
 
 export default InteoNavItems;
