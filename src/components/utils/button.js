@@ -1,8 +1,8 @@
 import Image from "next/image";
 
-const InteoReusableBtn = () => {
+const InteoReusableBtn = ({variant}) => {
   return (
-    <button className="flex itens-center justify-center gap-2 px-5 text-base text-white py-2.5 bg-yellow-700">
+    <button className={`${variant} flex itens-center justify-center gap-2 px-5 text-base text-white py-2.5 bg-yellow-700`}>
       <p className="uppercase">contact us</p>
       <Image
         src={"/images/arrow-icon.png"}

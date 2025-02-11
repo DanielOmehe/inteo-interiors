@@ -3,6 +3,7 @@ import { Inteo } from "./inteo";
 import InteoNavItem from "./navItem";
 import InteoNavItems from "./navItems";
 import { InteoItems } from "./navItems";
+import MobileNav from "./mobileNav";
 
 const navItems = [
   { path: "#about", name: "About" },
@@ -12,10 +13,10 @@ const navItems = [
 
 const InteoNavbar = ({}) => {
   return (
-    <nav className="flex itens-center justify-between px-36 py-8">
+    <nav className="md:px-8 md:py-6 sm:w-full sm:px-4 sm:py-4 flex items-center justify-between px-36 py-8">
       <Inteo />
+      <MobileNav />
       <InteoItems>
-        {" "}
         <InteoNavItems>
           {navItems.map((item, indx) => (
             <InteoNavItem key={indx} path={item.path}>

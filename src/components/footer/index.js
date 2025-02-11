@@ -13,51 +13,51 @@ const footerIcons = [
 
 const InteoPageFooter = () => {
   return (
-    <footer className="w-full px-36 py-16">
+    <footer className="w-full px-36 md:px-12 py-16 md:py-12 sm:px-8 sm:py-12">
       <InteoFooterSection
-        variant={"pt-12 pb-12 border-b-2 border-t-2 border-gray-50"}
+        variant={"pt-12 md:pt-8 md:pb-8 pb-12 border-b-2 border-t-2 border-gray-50"}
       >
         <InteoFooterContainer>
-          <PageHeadingLarge variant={"text-5xl pr-40 leading-tight mb-6"}>
+          <PageHeadingLarge variant={"text-5xl pr-40 leading-tight mb-6 md:text-6xl md:pr-12 sm:pr-0 sm:text-4xl"}>
             Kick-start your dream home with us
           </PageHeadingLarge>
           <PageHeadingLarge
-            variant={"text-4xl underline italic text-yellow-700"}
+            variant={"text-4xl underline italic text-yellow-700 md:text-5xl sm:text-4xl"}
           >
             Send us a hi
           </PageHeadingLarge>
         </InteoFooterContainer>
         <InteoFooterContainer variant={"flex flex-col items-left w-1/4"}>
           <div className="mb-8">
-            <PageHeaderSmall variant={"text-2xl capitalize mb-3"}>
+            <PageHeaderSmall variant={"text-2xl md:text-3xl capitalize mb-3 sm:text-xl"}>
               brooklyn, new york
             </PageHeaderSmall>
-            <InteoParagraphText variant={"text-base font-light"}>
+            <InteoParagraphText variant={"text-base font-light md:text-lg md:pr-80 sm:pr-0 sm:text-base"}>
               962 Fifth Avenue Str, 3rd Floor-Trump Building NY 10006, United
               State.
             </InteoParagraphText>
           </div>
           <div className="mb-8">
-            <InteoParagraphText variant={"text-base font-light mb-3"}>
+            <InteoParagraphText variant={"text-base capitalize font-light mb-3 md:text-lg"}>
               email us at
             </InteoParagraphText>
-            <PageHeaderSmall variant={"text-yellow-700 text-2xl"}>
+            <PageHeaderSmall variant={"text-yellow-700 text-2xl md:text-3xl sm:text-2xl"}>
               hello@landify.design
             </PageHeaderSmall>
           </div>
           <div className="">
-            <InteoParagraphText variant={"text-base font-light mb-3"}>
+            <InteoParagraphText variant={"text-base font-light mb-3 md:text-lg"}>
               If you're hurry, quick call for us
             </InteoParagraphText>
-            <PageHeaderSmall variant={"text-yellow-700 text-2xl"}>
+            <PageHeaderSmall variant={"text-yellow-700 text-2xl md:text-3xl sm:text-2xl"}>
               +8(663)125-08-59
             </PageHeaderSmall>
           </div>
         </InteoFooterContainer>
       </InteoFooterSection>
-      <InteoFooterSection variant={'py-16 flex items-center justify-between'}>
-        <InteoParagraphText>
-          © 2022 Inteo - Award winning studio. Made with love by Landify
+      <InteoFooterSection variant={'py-16 md:py-24 flex items-center justify-between'}>
+        <InteoParagraphText variant={'md:mb-8 sm:text-lg sm:mb-4'}>
+          © 2022 Inteo - Award winning studio. Made with love by <span className="text-yellow-800">Landify</span>
         </InteoParagraphText>
         <InteoFooterContainer variant={"flex w-1/3 gap-8 items-center"}>
           <div className="flex items-center gap-4">
@@ -79,14 +79,14 @@ const InteoPageFooter = () => {
 
 const InteoFooterSection = ({ variant, children }) => {
   return (
-    <section className={`w-full ${variant} flex justify-between`}>
+    <section className={`w-full ${variant} flex md:block justify-between`}>
       {children}
     </section>
   );
 };
 
 const InteoFooterContainer = ({ variant, children }) => {
-  return <div className={`w-1/2 ${variant}`}>{children}</div>;
+  return <div className={`w-1/2 md:w-full md:mb-12 ${variant}`}>{children}</div>;
 };
 
 const InteoFooterIcons = ({ children }) => {

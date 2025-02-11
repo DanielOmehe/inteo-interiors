@@ -5,10 +5,10 @@ import Image from "next/image";
 
 const InteoAboutSection = () => {
   return (
-    <section className="w-full flex items-start justify-between gap-24 py-48 px-36">
+    <section className="w-full md:block flex items-start justify-between gap-24 py-48 px-36 md:px-16 md:py-24 sm:px-8 sm:py-12">
       <InteoAboutSectionContainer>
         <InteoSectionHeader text={"about us"} />
-        <PageHeadingLarge variant={"text-6xl drop-shadow-lg mb-6 line-height"}>
+        <PageHeadingLarge variant={"text-6xl drop-shadow-lg mb-6 line-height sm:text-4xl sm:pr-12"}>
           We help to bring your <span className="italic">dream home</span> to
           reality
         </PageHeadingLarge>
@@ -16,14 +16,14 @@ const InteoAboutSection = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus
           fringilla dui amet faucibus nam. Erat id laoreet posuere etiam morbi.
         </InteoParagraphText>
-        <InteoParagraphText variant={'mb-6 font-light text-lg pr-2'}>
+        <InteoParagraphText variant={'mb-6 font-light text-lg pr-2 md:pr-0'}>
           Tempor dolor elementum tellus non ipsum faucibus. Justo, magna mauris
           posuere auctor justo. Habitant proin aliquet volutpat leo ultricies.
           Dui blandit eget vitae turpis ultrices aliquet nunc. Faucibus sit odio
           bibendum lobortis diam.
         </InteoParagraphText>
       </InteoAboutSectionContainer>
-      <InteoAboutSectionContainer variant={"flex gap-4"}>
+      <InteoAboutSectionContainer variant={"flex gap-4 md:mt-40"}>
         <Image
           className="-translate-y-20"
           src={"/images/about-image-one.png"}
@@ -45,5 +45,5 @@ const InteoAboutSection = () => {
 export default InteoAboutSection;
 
 export const InteoAboutSectionContainer = ({ variant, children }) => {
-  return <div className={`${variant}  w-1/2`}>{children}</div>;
+  return <div className={`${variant} md:w-full w-1/2`}>{children}</div>;
 };
