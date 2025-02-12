@@ -2,11 +2,7 @@
 import React, { useState } from 'react';
 
 const MobileNav = () => {
-    const [isOpen, setIsOpen] = useState(false);
-
-    const toggleNav = () => {
-        setIsOpen(!isOpen);
-    };
+    
 
     return (
         <div className="sm:fixed sm:w-full sm:h-auto sm:p-12 sm:bg-black">
