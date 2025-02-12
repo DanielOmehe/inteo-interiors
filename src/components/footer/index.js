@@ -15,7 +15,7 @@ const InteoPageFooter = () => {
   return (
     <footer className="w-full px-36 md:px-12 py-16 md:py-12 sm:px-8 sm:py-12">
       <InteoFooterSection
-        variant={"pt-12 md:pt-8 md:pb-8 pb-12 border-b-2 border-t-2 border-gray-50"}
+        variant={"py-12 sm:py-6 md:py-8 border-b-2 border-t-2 border-gray-50 "}
       >
         <InteoFooterContainer>
           <PageHeadingLarge variant={"text-5xl pr-40 leading-tight mb-6 md:text-6xl md:pr-12 sm:pr-0 sm:text-4xl"}>
@@ -55,7 +55,7 @@ const InteoPageFooter = () => {
           </div>
         </InteoFooterContainer>
       </InteoFooterSection>
-      <InteoFooterSection variant={'py-16 md:py-24 flex items-center justify-between'}>
+      <InteoFooterSection variant={'flex items-center justify-between pt-16'}>
         <InteoParagraphText variant={'md:mb-8 sm:text-lg sm:mb-4'}>
           © 2022 Inteo - Award winning studio. Made with love by <span className="text-yellow-800">Landify</span>
         </InteoParagraphText>
