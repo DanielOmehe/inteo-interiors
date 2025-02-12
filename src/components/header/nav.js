@@ -7,11 +7,12 @@ import MobileNav from "./mobileNav";
 
 const navItems = [
   { path: "#about", name: "About" },
-  { path: "#about", name: "Services" },
-  { path: "#about", name: "Our work" },
+  { path: "#services", name: "Services" },
+  { path: "#work", name: "Our work" },
 ];
 
-const InteoNavbar = ({}) => {
+
+const InteoNavbar = () => {
   return (
     <nav className="md:px-8 md:py-6 sm:w-full sm:px-4 sm:py-4 flex items-center justify-between px-36 py-8">
       <Inteo />
@@ -19,7 +20,7 @@ const InteoNavbar = ({}) => {
       <InteoItems>
         <InteoNavItems>
           {navItems.map((item, indx) => (
-            <InteoNavItem key={indx} path={item.path}>
+            <InteoNavItem key={indx} path={item.path} >
               {item.name}
             </InteoNavItem>
           ))}

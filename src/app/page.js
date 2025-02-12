@@ -6,10 +6,13 @@ import InteoMetricSection from "@/components/content/about/metric";
 import InteoServiceSection from "@/components/content/services";
 import InteoWorkSection from "@/components/content/our-work";
 import InteoPageFooter from "@/components/footer";
+import BackToTop from "@/components/utils/backToTop";
+// import InteoContactForm from "@/components/content/contact";
 
 export default function Home() {
   return (
     <>
+    {}
       <InteoHeader>
         <InteoNavbar />
       </InteoHeader>
@@ -19,6 +22,7 @@ export default function Home() {
       <InteoServiceSection />
       <InteoWorkSection />
       <InteoPageFooter />
+      <BackToTop />
     </>
   );
 }
