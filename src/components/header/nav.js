@@ -23,9 +23,9 @@ const [isOpen, setIsOpen] = useState(false);
   return (
     <nav className="md:px-8 md:py-6 sm:w-full sm:px-4 sm:py-4 flex items-center justify-between px-36 py-8">
       <Inteo />
-      {isOpen && <MobileNav />}
+      {/*{isOpen && <MobileNav />}*/}
       <InteoItems>
-            <button
+         {/*   <button
                 className="hidden sm:block text-white focus:outline-none"
                 onClick={toggleNav}
             >
@@ -43,7 +43,7 @@ const [isOpen, setIsOpen] = useState(false);
                         d="M4 6h16M4 12h16m-7 6h7"
                     ></path>
                 </svg>
-            </button>
+            </button> */}
         <InteoNavItems>
           {navItems.map((item, indx) => (
             <InteoNavItem key={indx} path={item.path} >
