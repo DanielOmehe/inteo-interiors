@@ -23,7 +23,7 @@ const services = [
 
 const InteoServiceSection = () => {
   return (
-    <section className="px-36 py-20 w-full md:px-12 md:py-12 sm:px-8 sm:py-12">
+    <section id="services" className="px-36 py-20 w-full md:px-12 md:py-12 sm:px-8 sm:py-12">
       <InteoSectionHeader text={"our services"} />
       <PageHeadingLarge variant={"text-5xl w-1/2 md:w-full md:pr-12 font-semibold sm:pr-0 sm:text-4xl"}>
         We provide the <span className="italic">best solutions</span> for your

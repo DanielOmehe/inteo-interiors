@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const InteoAboutSection = () => {
   return (
-    <section className="w-full md:block flex items-start justify-between gap-24 py-48 px-36 md:px-16 md:py-24 sm:px-8 sm:py-12">
+    <section id="about" className="w-full md:block flex items-start justify-between gap-24 py-48 px-36 md:px-16 md:py-24 sm:px-8 sm:py-12">
       <InteoAboutSectionContainer>
         <InteoSectionHeader text={"about us"} />
         <PageHeadingLarge variant={"text-6xl drop-shadow-lg mb-6 line-height sm:text-4xl sm:pr-12"}>

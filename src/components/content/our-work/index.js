@@ -5,7 +5,7 @@ import InteoReusableBtn from "@/components/utils/button";
 
 const InteoWorkSection = () => {
   return (
-    <section className="w-full px-36 md:min-h-screen md:px-12 py-12 flex md:block md:relative items-start gap-16 sm:px-8 sm:py-8 md:gap-0 md:items-center md:justify-center">
+    <section id="work" className="w-full px-36 md:min-h-screen md:px-12 py-12 flex md:block md:relative items-start gap-16 sm:px-8 sm:py-8 md:gap-0 md:items-center md:justify-center">
       <InteoWorkSectionContainer>
         <InteoSectionHeader text={"recent work"} />
         <PageHeadingMedium variant={"text-6xl mb-24 pr-32 sm:pr-0 sm:text-4xl"}>
