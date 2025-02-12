@@ -1,3 +1,5 @@
+
+import {useState} from "react"
 import InteoReusableBtn from "../utils/button";
 import { Inteo } from "./inteo";
 import InteoNavItem from "./navItem";
@@ -13,10 +15,15 @@ const navItems = [
 
 
 const InteoNavbar = () => {
+const [isOpen, setIsOpen] = useState(false);
+
+    const toggleNav = () => {
+        setIsOpen(!isOpen);
+    };
   return (
     <nav className="md:px-8 md:py-6 sm:w-full sm:px-4 sm:py-4 flex items-center justify-between px-36 py-8">
       <Inteo />
-      <MobileNav />
+      {isOpen && <MobileNav />}
       <InteoItems>
             <button
                 className="hidden sm:block text-white focus:outline-none"
