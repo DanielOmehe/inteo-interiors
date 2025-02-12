@@ -11,7 +11,7 @@ const awards =[
 
 const InteoAwards = () => {
   return (
-    <section className="w-full md:h-72 py-4 px-24 md:px-2 bg-gray-900 flex sm:items-start items-center gap-8 md:gap-0 sm:h-auto">
+    <section className="w-full md:h-72 py-4 px-24 md:px-2 bg-black flex sm:items-start items-center gap-8 md:gap-0 sm:py-8 sm:h-auto">
       <InteoAwardsLeft />
       <InteoAwardsContainer>
         {
