@@ -9,7 +9,7 @@ const MobileNav = () => {
     };
 
     return (
-        <div className="relative">
+        <div className="fixed w-full h-auto p-12 bg-black">
             <button
                 className="text-white focus:outline-none"
                 onClick={toggleNav}
