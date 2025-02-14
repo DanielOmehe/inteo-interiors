@@ -5,7 +5,6 @@ import { Inteo } from "./inteo";
 import InteoNavItem from "./navItem";
 import InteoNavItems from "./navItems";
 import { InteoItems } from "./navItems";
-import MobileNav from "./mobileNav";
 
 const navItems = [
   { path: "#about", name: "About" },

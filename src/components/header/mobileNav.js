@@ -50,6 +50,4 @@ const MobileNav = ({ isOpen, toggleNav }) => {
       </ul>
     </div>
   );
-};
-
-export default MobileNav;
+=======
