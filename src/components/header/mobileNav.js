@@ -1,54 +1,55 @@
-"use client";
-import React, { useState } from 'react';
+import Link from "next/link";
 
-const MobileNav = () => {
-    const [isOpen, setIsOpen] = useState(false);
-
-    const toggleNav = () => {
-        setIsOpen(!isOpen);
-    };
-
-    return (
-        <div className="relative">
-            <button
-                className="text-white focus:outline-none"
-                onClick={toggleNav}
-            >
-                <svg
-                    className="w-6 h-6"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M4 6h16M4 12h16m-7 6h7"
-                    ></path>
-                </svg>
-            </button>
-            {isOpen && (
-                <div className="absolute top-0 left-0 w-full bg-gray-800 text-white">
-                    <ul className="flex flex-col items-center space-y-4 py-4">
-                        <li>
-                            <a href="#home" className="hover:text-gray-400">Home</a>
-                        </li>
-                        <li>
-                            <a href="#about" className="hover:text-gray-400">About</a>
-                        </li>
-                        <li>
-                            <a href="#services" className="hover:text-gray-400">Services</a>
-                        </li>
-                        <li>
-                            <a href="#contact" className="hover:text-gray-400">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            )}
-        </div>
-    );
+const MobileNav = ({ isOpen, toggleNav }) => {
+  return (
+    <div
+      className={`w-screen h-3/4 px-12 py-12 fixed top-0 left-0 transform ${
+        isOpen ? "translate-y-0" : "-translate-y-full"
+      } transition-transform duration-300 bg-white z-50`}
+    >
+      <button className="close-btn" onClick={toggleNav}>
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M18 6L6 18"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M6 6L18 18"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
+      </button>
+      <ul className="flex flex-col items-center gap-8 mt-16">
+        <li>
+          <Link className="text-xl" href="#about" onClick={toggleNav}>
+            About
+          </Link>
+        </li>
+        <li>
+          <Link href="#services" className="text-xl" onClick={toggleNav}>
+            Services
+          </Link>
+        </li>
+        <li>
+          <Link href="#work" className="text-xl" onClick={toggleNav}>
+            Work
+          </Link>
+        </li>
+      </ul>
+    </div>
+  );
 };
 
 export default MobileNav;
