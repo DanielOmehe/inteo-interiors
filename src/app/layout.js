@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${playfair.variable} ${outfit.variable} antialiased`}
+        className={`${playfair.variable} ${outfit.variable} antialiased overflow-x-hidden`}
       >
         {children}
       </body>
